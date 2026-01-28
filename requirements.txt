@@ -1,0 +1,6 @@
+AllanTools==2019.9
+matplotlib==3.8.0
+numpy==1.26.4
+pyvisa==1.14.1
+pyzmq==25.1.2
+seaborn==0.13.2
