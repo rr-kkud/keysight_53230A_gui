@@ -9,6 +9,7 @@ from matplotlib.figure import Figure
 import seaborn as sns
 sns.set_palette('colorblind')
 
+import os
 import allantools as at
 import numpy as np
 import zmq
@@ -34,6 +35,10 @@ class MyApp(tk.Tk):
 		# Placeholder filenames - will be updated when logging starts
 		self.allan_file = 'ks_placeholder_allan.txt'
 		self.time_series_file = 'ks_placeholder_timeseries.txt'
+		
+		# Create data folder if it doesn't exist
+		if not os.path.exists('./data'):
+			os.makedirs('./data')
 		
 		# Counter and connection setup
 		self.counter = None

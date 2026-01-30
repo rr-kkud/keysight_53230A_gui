@@ -1,6 +1,5 @@
 import pyvisa
 import zmq
-import config
 from time import sleep
 from numpy.random import default_rng
 import argparse
